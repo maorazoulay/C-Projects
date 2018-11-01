@@ -8,9 +8,6 @@ private:
 	double i; //imaginary part
 
 public:
-	// constructors
-
-	// default constructor
 	Complex() {
 		r = 0;
 		i = 0;
@@ -25,8 +22,6 @@ public:
 		r = r1;
 		i = i1;
 	}
-
-	// setters and getters (these should be easy)
 	int getR() {
 		return r;
 	}
@@ -78,9 +73,9 @@ public:
 		return t;
 	}
 	
-	//We only need to output for this one
+
 	friend ostream &operator<<(ostream &os, Complex c);
-}; // end of Complex Class
+};
 
 ostream &operator<<(ostream &os, Complex c) {
 	if (c.i == 0){
